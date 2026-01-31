@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    
+<link rel="icon" href="favicon.png" type="image/png">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Flow+Circular&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!--Navbar-->
+    <nav>
+        <div class="left-half">
+            <i id="menuBtn" class="fa-solid fa-bars hamburger"></i>
+
+            <div class="logo"><i class="fa-brands fa-spotify"></i></div>
+
+            <div class="home-icon"><i class="fa-solid fa-house"></i></div>
+            <i id="mobileSearchBtn" class="fa-solid fa-magnifying-glass mobile-search-icon"></i>
+            <div class="search-bar">
+                <div class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                <input type="text" class="input-box" placeholder="What do you want play">
+                <div class="browse"><i class="fa-solid fa-folder"></i></div>
+            </div>
+        </div>
+
+        <div class="right-half">
+            <div class="right-half-p1">
+                <p class="nav-text">Premium</p>
+                <p class="nav-text">Support</p>
+                <p class="nav-text">Download</p>
+            </div>
+            <div class="right-half-p2">
+                <div class="nav-text"> <i class="fa-regular fa-circle-down"></i> Install App</div>
+                <div class="nav-text"> Sign up</div>
+                <button class="login-btn">Log in</button>
+            </div>
+        </div>
+    </nav>
+
+    <!--Main- left part -->
+    <div class="main">
+        <div class="main-left-part " id="sidebar">
+            <div class="library">
+                <p>Your Library</p>
+                <div>+</div>
+            </div>
+
+            <div class="box-container">
+                <div class="box">
+                    <h4>Create your first playlist</h4>
+                    <p>It's easy we'll help you</p>
+                    <button>Create playlist</button>
+                </div>
+                <div class="box">
+                    <h4>Let's find some podcast to follow</h4>
+                    <p>we'll keep you updated</p>
+                    <button>Browse podcasts</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- MAIN RIGHT PART -->
+        <div class="main-right-part">
+            <div class="music-section">
+                <h2>Popular Songs</h2>
+                <div class="songs" id="popularSongs"></div>
+            </div>
+
+            <div class="music-section">
+                <h2>Recommended Songs</h2>
+                <div class="songs" id="recommendedSongs"></div>
+            </div>
+
+            <div class="music-section">
+                <h2>Recently Played</h2>
+                <div class="songs" id="recentSongs"></div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- playbar -->
+    <div class="player-bar">
+        <div class="nowBar">
+            <img src="Images/1.jpg" alt="">
+            <div>
+                <div class="img-title-info">Title 1</div>
+                <div class="img-des-info">This is description for title 1</div>
+            </div>
+        </div>
+        <div class="music-controller">
+            <div class="player">
+                <div><i id="shuffle" class="player-btns fa-solid fa-shuffle"></i></div>
+                <div><i id="backward" class="player-btns fa-solid fa-backward-step"></i></div>
+                <div><i id="play" class="player-btns fa-solid fa-circle-play"></i></div>
+                <div><i id="forward" class="player-btns fa-solid fa-forward-step"></i></div>
+                <div><i id="repeat" class="player-btns fa-solid fa-repeat"></i></div>
+            </div>
+            <div>
+                <input type="range" id="progressBar" value="0">
+            </div>
+        </div>
+        <div></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
