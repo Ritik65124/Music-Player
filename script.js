@@ -13,27 +13,28 @@ document.addEventListener("DOMContentLoaded", () => {
     /* ================== SONG DATA ================== */
 
     let songs = [
-        { songName: 'Agar Tum Mil Jao', songDes: 'Shreya Ghoshal', songImage: 'Images/1.jpg', songPath: 'Audio/1.mp3', category: 'popular' },
-        { songName: 'Aksar Is Duniya Mein', songDes: 'Emraan Hashmi, Himesh Reshammiya', songImage: 'Images/2.jpg', songPath: 'Audio/2.mp3', category: 'popular' },
-        { songName: 'Bahut Pyaar Karte Hain', songDes: 'Anuradha Paudwal', songImage: 'Images/3.jpg', songPath: 'Audio/3.mp3', category: 'popular' },
+        { songName: 'Agar Tum Mil', songDes: 'Shreya Ghoshal', songImage: 'Images/1.jpg', songPath: 'Audio/1.mp3', category: 'popular' },
+        { songName: 'Aksar Is Duniya', songDes: 'Emraan, Himesh', songImage: 'Images/2.jpg', songPath: 'Audio/2.mp3', category: 'popular' },
+        { songName: 'Bahut Pyaar', songDes: 'Anuradha Paudwal', songImage: 'Images/3.jpg', songPath: 'Audio/3.mp3', category: 'popular' },
         { songName: 'Tum Hi Ho', songDes: 'Arijit Singh', songImage: 'Images/6.jpg', songPath: 'Audio/6.mp3', category: 'popular' },
         { songName: 'Kesariya', songDes: 'Arijit Singh', songImage: 'Images/9.jpg', songPath: 'Audio/9.mp3', category: 'popular' },
-        { songName: 'Raataan Lambiyan', songDes: 'Jubin Nautiyal, Asees Kaur', songImage: 'Images/11.jpg', songPath: 'Audio/11.mp3', category: 'popular' },
+        { songName: 'Raataan Lambiyan', songDes: 'Jubin Nautiyal', songImage: 'Images/11.jpg', songPath: 'Audio/11.mp3', category: 'popular' },
 
-        { songName: 'Heeriye', songDes: 'Jasleen Royal, Arijit Singh', songImage: 'Images/10.jpg', songPath: 'Audio/10.mp3', category: 'recommended' },
+        { songName: 'Heeriye', songDes: 'Arijit Singh', songImage: 'Images/10.jpg', songPath: 'Audio/10.mp3', category: 'recommended' },
         { songName: 'Apna Bana Le', songDes: 'Arijit Singh', songImage: 'Images/12.jpg', songPath: 'Audio/12.mp3', category: 'recommended' },
         { songName: 'Channa Mereya', songDes: 'Arijit Singh', songImage: 'Images/14.jpg', songPath: 'Audio/14.mp3', category: 'recommended' },
         { songName: 'Hawayein', songDes: 'Arijit Singh', songImage: 'Images/15.jpg', songPath: 'Audio/15.mp3', category: 'recommended' },
         { songName: 'Dil Diyan Gallan', songDes: 'Atif Aslam', songImage: 'Images/16.jpg', songPath: 'Audio/16.mp3', category: 'recommended' },
         { songName: 'Shayad', songDes: 'Arijit Singh', songImage: 'Images/18.jpg', songPath: 'Audio/18.mp3', category: 'recommended' },
 
-        { songName: 'Chhalakata Hamro Jawaniya', songDes: 'Pawan Singh, Kalpana', songImage: 'Images/4.jpg', songPath: 'Audio/4.mp3', category: 'recent' },
+        { songName: 'Chhalakata Jawaniya', songDes: 'Pawan Singh', songImage: 'Images/4.jpg', songPath: 'Audio/4.mp3', category: 'recent' },
         { songName: 'Cooler Kurti Mein', songDes: 'Khesari Lal Yadav', songImage: 'Images/5.jpg', songPath: 'Audio/5.mp3', category: 'recent' },
         { songName: 'One Bottle Down', songDes: 'Yo Yo Honey Singh', songImage: 'Images/7.jpg', songPath: 'Audio/7.mp3', category: 'recent' },
-        { songName: 'Panche Ke Nache', songDes: 'Bhojpuri Hit Song', songImage: 'Images/8.jpg', songPath: 'Audio/8.mp3', category: 'recent' },
+        { songName: 'Panche Ke Nache', songDes: 'Bhojpuri', songImage: 'Images/8.jpg', songPath: 'Audio/8.mp3', category: 'recent' },
         { songName: 'Teri Mitti', songDes: 'B Praak', songImage: 'Images/13.jpg', songPath: 'Audio/13.mp3', category: 'recent' },
         { songName: 'Kaise Hua', songDes: 'Vishal Mishra', songImage: 'Images/17.jpg', songPath: 'Audio/17.mp3', category: 'recent' }
     ];
+
 
     let order = [...songs];
 
@@ -220,3 +221,4 @@ if (mobileSearchBtn) {
         searchInput.focus();
     });
 }
+
