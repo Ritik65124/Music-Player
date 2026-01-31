@@ -811,3 +811,60 @@ input[type=range]::-webkit-slider-thumb {
     }
 }
 
+
+
+@media (max-width: 430px) {
+
+    /* jab search open ho, right side hide */
+    .search-bar.show-search ~ .right-half {
+        display: none;
+    }
+
+    /* search bar full width */
+    .search-bar.show-search {
+        max-width: 100%;
+    }
+
+    /* input text proper */
+    .input-box {
+        font-size: 0.95rem;
+    }
+
+    /* login button normal size */
+    .login-btn {
+        font-size: 0.8rem;
+        height: 2.1rem;
+        width: 5rem;
+    }
+}
+
+
+@media (max-width: 430px) {
+
+    .music-card {
+        width: 7.2rem;
+    }
+
+    .music-card img {
+        height: 130px;
+    }
+
+    .img-title {
+        font-size: 0.9rem;
+    }
+
+    .img-description {
+        font-size: 0.75rem;
+    }
+}
+@media (max-width: 430px) {
+
+    :root {
+        --player-height: 78px;
+    }
+
+    #progressBar {
+        width: 75vw;
+    }
+}
+
