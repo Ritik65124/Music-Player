@@ -98,6 +98,10 @@ nav {
     transform: scale(1.05);
 }
 
+.mobile-search-icon {
+    display: none;
+}
+
 .search-bar {
     background-color: #1f1f1f;
     align-items: center;
@@ -566,305 +570,90 @@ input[type=range]::-webkit-slider-thumb {
 }
 
 
-
-
-
-
-
-@media (max-width: 900px) {
-    .right-half-p1 {
-        display: none;
-    }
-
-    .search-bar {
-        max-width: 260px;
-    }
-}
-
 @media (max-width: 768px) {
+
+    /* hamburger show */
     #menuBtn {
         display: block;
     }
 
+    .mobile-search-icon {
+        display: block;
+    }
+
+    .home-icon {
+        display: none;
+    }
+
+    /* sidebar hide by default */
     .main-left-part {
         position: fixed;
         left: 0;
         top: 4rem;
         height: calc(100vh - 4rem);
-        z-index: 999;
+        z-index: 1001;
     }
 
-    .main-left-part.hide {
-        transform: translateX(-110%);
+    /* search bar hide */
+    .search-bar {
+        display: none;
     }
 
+    /* nav right items hide */
+    .right-half {
+        display: none;
+    }
+
+    /* cards thodi chhoti */
     .music-card {
-        width: 8.5rem;
+        width: 8rem;
     }
 
-    #progressBar {
-        width: 70vw;
+    /* player bar height chhoti */
+    :root {
+        --player-height: 90px;
     }
-}
 
-
-
-
-
-
-@media (max-width: 480px) {
-
-    nav {
+    .player-bar {
+        height: 60px;
         padding: 0 0.5rem;
     }
 
-    .logo {
-        font-size: 1.8rem;
+    /* song image chhoti */
+    .player-bar img {
+        width: 38px;
+        height: 38px;
     }
 
-    .login-btn {
-        width: 5rem;
+    /* title text small */
+    .img-title-info {
         font-size: 0.8rem;
     }
-}
 
-
-/* CLEAN MOBILE NAVBAR  */
-
-.mobile-search-icon {
-    display: none;
-    color: white;
-    font-size: 1.3rem;
-    cursor: pointer;
-}
-
-@media (max-width: 768px) {
-
-    nav {
-        display: flex;
-        align-items: center;
-        gap: 0.6rem;
-        padding: 0 0.6rem;
+    .img-des-info {
+        font-size: 0.65rem;
     }
 
-    .left-half {
-        display: flex;
-        align-items: center;
-        flex: 1;
-        gap: 0.5rem;
-        min-width: 0;
-    }
-
-    /* hamburger */
-    #menuBtn {
-        display: block;
-    }
-
-    /* home icon */
-    .home-icon {
-        display: flex;
-        margin: 0;
-    }
-
-    /* logo thoda small */
-    .logo {
-        font-size: 2rem;
-        margin: 0;
-    }
-
-    /* desktop stuff hide */
-    .right-half-p1,
-    .right-half-p2 .nav-text {
-        display: none;
-    }
-
-    .login-btn {
-        height: 2.2rem;
-        width: 5.4rem;
-        font-size: 0.85rem;
-        margin: 0;
-    }
-
-    /*SEARCH BEHAVIOR*/
-
-    /* default: only icon */
-    .search-bar {
-
-        flex: 1;
-
-        height: 40px;
-        border-radius: 20px;
-
-    }
-
-    .mobile-search-icon {
-        display: block;
-    }
-
-    /* when active */
-    .search-bar.show-search {
-        display: flex;
-    }
-}
-
-/*  MOBILE NAVBAR & SEARCH  */
-
-.mobile-search-icon {
-    display: none;
-    color: white;
-    font-size: 1.3rem;
-    cursor: pointer;
-}
-
-@media (max-width: 768px) {
-
-    nav {
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-        padding: 0 0.6rem;
-        height: 4rem;
-    }
-
-    .left-half {
-        display: flex;
-        align-items: center;
-        flex: 1;
-        gap: 0.5rem;
-        min-width: 0;
-    }
-
-    /* hamburger */
-    #menuBtn {
-        display: block;
-        flex-shrink: 0;
-    }
-
-    /* home icon */
-    .home-icon {
-        display: flex;
-        margin: 0;
-        flex-shrink: 0;
-    }
-
-    /* logo */
-    .logo {
-        font-size: 2rem;
-        margin: 0;
-        flex-shrink: 0;
-    }
-
-    /* right side */
-    .right-half {
-        flex-shrink: 0;
-    }
-
-    .right-half-p1,
-    .right-half-p2 .nav-text {
-        display: none;
-    }
-
-    .login-btn {
-        height: 2.2rem;
-        width: 5.4rem;
-        font-size: 0.85rem;
-        margin: 0;
-        white-space: nowrap;
-    }
-
-    /* SEARCH  */
-
-    .search-bar {
-        display: none;
-        flex: 1;
-        min-width: 0;
-        max-width: 100%;
-        height: 40px;
-        border-radius: 999px;
-        background-color: #1f1f1f;
-        border: none;
-    }
-
-    .search-bar.show-search {
-        display: flex;
-    }
-
-    /* clean input (no white border) */
-    .input-box {
-        border: none;
-        outline: none;
-        box-shadow: none;
-        background: transparent;
-        color: white;
-        font-size: 1rem;
-    }
-
-    .input-box:focus {
-        outline: none;
-        box-shadow: none;
-    }
-
-    /* search icon */
-    .mobile-search-icon {
-        display: block;
-        flex-shrink: 0;
-    }
-}
-
-
-
-@media (max-width: 430px) {
-
-    /* jab search open ho, right side hide */
-    .search-bar.show-search ~ .right-half {
-        display: none;
-    }
-
-    /* search bar full width */
-    .search-bar.show-search {
-        max-width: 100%;
-    }
-
-    /* input text proper */
-    .input-box {
-        font-size: 0.95rem;
-    }
-
-    /* login button normal size */
-    .login-btn {
-        font-size: 0.8rem;
-        height: 2.1rem;
-        width: 5rem;
-    }
-}
-
-
-@media (max-width: 430px) {
-
-    .music-card {
-        width: 7.2rem;
-    }
-
-    .music-card img {
-        height: 130px;
-    }
-
-    .img-title {
+    /* buttons compact */
+    .player-btns {
         font-size: 0.9rem;
+        margin: 0 0.4rem;
     }
 
-    .img-description {
-        font-size: 0.75rem;
-    }
-}
-@media (max-width: 430px) {
-
-    :root {
-        --player-height: 78px;
+    #play {
+        font-size: 1.6rem;
     }
 
+    /* seek bar chhoti */
     #progressBar {
-        width: 75vw;
+        width: 55vw;
+        height: 3px;
+    }
+
+    /* extra icons hide (optional) */
+    #shuffle,
+    #repeat {
+        display: none;
     }
 }
 
